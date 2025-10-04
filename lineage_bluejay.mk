@@ -30,4 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=google/bluejay/bluejay:16/BP2A.250705.008/13578956:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
+WITAQUA_MAINTAINER := "Toufu"
+
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
