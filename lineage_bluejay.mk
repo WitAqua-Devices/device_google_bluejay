@@ -1,11 +1,10 @@
 #
-# SPDX-FileCopyrightText: 2021-2024 The LineageOS Project
-# SPDX-FileCopyrightText: 2021-2024 The Calyx Institute
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-FileCopyrightText: The Calyx Institute
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Inherit some common stuff
-TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
@@ -13,8 +12,6 @@ DEVICE_CODENAME := bluejay
 DEVICE_PATH := device/google/bluejay
 VENDOR_PATH := vendor/google/bluejay
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
-$(call inherit-product, device/google/gs101/lineage_common.mk)
-$(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
@@ -26,8 +23,8 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="bluejay-user 16 BP2A.250705.008.A1 13673213 release-keys" \
-    BuildFingerprint=google/bluejay/bluejay:16/BP2A.250705.008.A1/13673213:user/release-keys \
+    BuildDesc="bluejay-user 16 BP3A.250905.014 13873947 release-keys" \
+    BuildFingerprint=google/bluejay/bluejay:16/BP3A.250905.014/13873947:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 WITAQUA_MAINTAINER := "Toufu"

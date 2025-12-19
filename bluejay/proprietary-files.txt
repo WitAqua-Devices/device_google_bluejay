@@ -3,7 +3,7 @@
 # product partition
 
 # AiAi
-product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk;PRESIGNED
+product/priv-app/DeviceIntelligenceNetworkPrebuilt-bfinal_astrea_20250217.00_RC00/DeviceIntelligenceNetworkPrebuilt-bfinal_astrea_20250217.00_RC00.apk;PRESIGNED
 product/priv-app/DevicePersonalizationPrebuiltPixel2021-bfinal_aiai_20250217.00_RC08/DevicePersonalizationPrebuiltPixel2021-bfinal_aiai_20250217.00_RC08.apk;PRESIGNED
 
 # Audio
@@ -39,6 +39,9 @@ product/priv-app/HotwordEnrollmentXGoogleFUSIONPro/HotwordEnrollmentXGoogleFUSIO
 # IMS
 product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 
+# NFC
+product/etc/libnfc-nci.conf
+
 # Permissions
 product/etc/permissions/privapp-permissions-google-p.xml:product/etc/permissions/privapp-permissions-google-p-lineage.xml
 product/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml
@@ -62,7 +65,7 @@ product/lib/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmengin
 product/lib/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmjavaplugin.so
 product/lib64/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmengine.so
 product/lib64/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmjavaplugin.so
-product/priv-app/CarrierSettings_signed_53.0.733201674/CarrierSettings_signed_53.0.733201674.apk;PRESIGNED
+product/priv-app/CarrierSettings_signed_55.0.755436886/CarrierSettings_signed_55.0.755436886.apk;PRESIGNED
 product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 product/priv-app/ConnMO/ConnMO.apk
 product/priv-app/DCMO/DCMO.apk
@@ -157,6 +160,10 @@ system_ext/etc/permissions/com.samsung.slsi.telephony.oemril.xml
 system_ext/etc/permissions/oemrilhook.xml
 system_ext/framework/oemrilhook.jar
 system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
+
+# Watchdog
+system_ext/bin/gs_watchdogd
+system_ext/etc/init/init.gs_watchdogd.rc
 
 # VZW
 system_ext/etc/permissions/vzw_mvs_permissions.xml
