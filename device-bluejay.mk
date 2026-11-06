@@ -16,6 +16,7 @@ include device/google/gs101/common.mk
 
 # Overlays
 PRODUCT_PACKAGES += \
+    BluejayFrameworkOverlay \
     DMServiceOverlayVendorBluejay \
     FrameworkResOverlayProductBluejay \
     FrameworkResOverlayVendorBluejay \
@@ -32,6 +33,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     ApertureOverlayBluejay
+
+# Preinstalled packages
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/sysconfig/preinstalled-packages-prebuilt-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-prebuilt-product.xml \
+    $(DEVICE_PATH)/sysconfig/preinstalled-packages-prebuilt-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-prebuilt-system_ext.xml
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/product.prop
